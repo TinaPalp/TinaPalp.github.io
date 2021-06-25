@@ -1,7 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 10% 30% 50% 10%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
@@ -34,7 +34,7 @@
   .container{
         display:grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 10% 30% 50% 10%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "nav nav nav nav nav nav nav nav"
         "hd hd hd hd hd hd hd hd"
