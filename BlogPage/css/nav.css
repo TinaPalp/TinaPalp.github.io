@@ -16,11 +16,15 @@
   /* add css for nested grid here */
   .box{
       border: 1px solid red;
-      background: #F8FA9D;
+      background: #fa9dea;
       }
     .header{
       /* row start/column start/ row end/ column end */
       grid-area:hd;
+      background-image: url('../images/header.jpeg');
+      width:100%;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     .footer{
       grid-area: ft;  
