@@ -1,7 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 10vh 30vh 50vh 10vh;
+    grid-template-rows: 15vh 35vh 35vh 15vh;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
@@ -9,13 +9,13 @@
     "hd"
     "main"
     "ft";
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
   }
 
 
   /* add css for nested grid here */
   .box{
-      border: 1px solid red;
+      /*border: 1px solid red;*/
       background: #fa9dea;
       }
     .header{
@@ -40,12 +40,12 @@
   .container{
         display:grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 10vh 30vh 50vh 10vh;
+        grid-template-rows: 15vh 35vh 35vh 15vh;
         grid-template-areas: 
         "nav nav nav nav nav nav nav nav"
         "hd hd hd hd hd hd hd hd"
         "main main main main main main main main"
         "ft ft ft ft ft ft ft ft";
-        border: 2px solid rgb(226, 219, 219);
+        /*border: 2px solid rgb(226, 219, 219);*/
     }
   }
