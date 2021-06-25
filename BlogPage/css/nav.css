@@ -11,6 +11,9 @@
     "ft";
     border: 2px solid yellow;
   }
+
+  html, body
+  { height: 100vh;}
   /* add css for nested grid here */
   .box{
       border: 1px solid red;
