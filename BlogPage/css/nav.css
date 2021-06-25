@@ -12,11 +12,20 @@
     /*border: 2px solid yellow;*/
   }
 
+  #nested grid nav{
+      display: grid;
+      grid-template-columns:15% 15% 70%;
+      border: 3px solid red; 
+  }
+
+  .navbox{
+      align-items: center;
+  }
 
   /* add css for nested grid here */
   .box{
       /*border: 1px solid red;*/
-      background: #fa9dea;
+      background: #e99bdcea;
       }
     .header{
       /* row start/column start/ row end/ column end */
@@ -35,6 +44,8 @@
     .content{
       grid-area: main;
     }
+
+
   /* If Screen Is Wide Enough */
   @media(min-width:900px){
   .container{
@@ -49,3 +60,4 @@
         /*border: 2px solid rgb(226, 219, 219);*/
     }
   }
+
