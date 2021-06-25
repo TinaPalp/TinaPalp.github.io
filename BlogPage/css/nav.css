@@ -1,7 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 10vh 30vh 50vh 10vh;
+    grid-template-rows: 50px 200px 1fr 50px;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
@@ -36,7 +36,7 @@
   .container{
         display:grid;
         grid-template-columns: auto auto auto;
-        grid-template-rows: 10vh 30vh 50vh 10vh;
+        grid-template-rows: 50px 200px 1fr 50px;;
         grid-template-areas: 
         "nav nav nav nav nav nav nav nav"
         "hd hd hd hd hd hd hd hd"
