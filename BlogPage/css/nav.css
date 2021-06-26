@@ -1,7 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: 100vw;
-    background: #e99bdcea;
+    background: #ffb8f3ea;
     grid-template-rows: 15vh 35vh 35vh 15vh;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
@@ -26,7 +26,7 @@
   /* add css for nested grid here */
   .box{
       /*border: 1px solid red;*/
-      background: #e99bdcea;
+      background: #ffb8f3ea;
       }
     .header{
       /* row start/column start/ row end/ column end */
