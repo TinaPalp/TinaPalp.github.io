@@ -1,3 +1,10 @@
+
+body {
+  background-color: violet;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .container{
     display:grid;
     grid-template-columns: 100vw;
