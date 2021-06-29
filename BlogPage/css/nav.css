@@ -1,93 +1,56 @@
+@import './style.css';
 
-body {
-  background-color: violet;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 30px !important;
 }
 
-li {
-  float: left;
+
+nav ul{
+  display:flex;
+  justify-content: space-between;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+nav ul > li{
+  list-style: none;
+  padding-right:30px;
+  color: rgb(11, 22, 59);
+  font-size: larger;
+  cursor: pointer;
 }
 
-li a:hover {
-  background-color: #111;
+nav ul > li a{
+  color: rgb(47, 48, 51);
+  font-size: larger;
+  cursor: pointer;
+  text-decoration:none;
 }
-.container{
-    display:grid;
-    grid-template-columns: 100vw;
-    background: #ffb8f3ea;
-    grid-template-rows: 15vh 35vh 35vh 15vh;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
-    grid-template-areas: 
-    "nav"
-    "hd"
-    "main"
-    "ft";
-    /*border: 2px solid yellow;*/
-  }
 
-  #nestedgridnav{
-      display: grid;
-      grid-template-columns:15% 15% 70%;
-      border: 3px solid red; 
-  }
+nav ul > li a:hover{
+  color: rgb(50, 162, 190);
+  font-size: larger;
+  text-decoration:underline;
+}
 
-  .navbox{
-      align-items: center;
-  }
+nav ul > li a:active{
+  color:rgb(50, 162, 190);
+  font-size: larger;
+  text-decoration:underline;
+}
 
-  /* add css for nested grid here */
-  .box{
-      /*border: 1px solid red;*/
-      background: #ffb8f3ea;
-      }
-    .header{
-      /* row start/column start/ row end/ column end */
-      grid-area:hd;
-      background-image: url('../images/header.jpeg');
-      width:100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .footer{
-      grid-area: ft;  
-    }
-    .navigation{
-      grid-area: nav;
-    }
-    .content{
-      grid-area: main;
-    }
+nav ul > li:last-of-type{
+  padding-right: 0;
+}
+
+
+  
+
+
+
 
 
   /* If Screen Is Wide Enough */
-  @media(min-width:900px){
-  .container{
-        display:grid;
-        grid-template-columns:100vw;
-        grid-template-rows: 15vh 35vh 35vh 15vh;
-        grid-template-areas: 
-        "nav nav nav nav nav nav nav nav"
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-        /*border: 2px solid rgb(226, 219, 219);*/
-    }
-  }
+
 
