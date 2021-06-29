@@ -1,0 +1,35 @@
+@import './style.css';
+
+.mainheading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 60vh;
+    color: white;
+    text-align: center;
+}
+
+.mainheading h2.name-heading{
+    font-size:4em;
+    text-shadow: 0 0 5px black;
+    
+}
+
+.mainheading p.tagline{
+    font-style: italic;
+    font-size:30px;
+    text-shadow: 0 0 5px black;
+}
+
+
+  /* add css for nested grid here */
+  
+.header{
+      /* row start/column start/ row end/ column end */
+    grid-area:hd;
+    background-image: url('../images/header_2.jpeg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
