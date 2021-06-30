@@ -16,12 +16,13 @@ nav ul{
 nav ul > li{
   list-style: none;
   padding-right:30px;
-  color: rgb(11, 22, 59);
+  color:black;
+  text-shadow: 0 0 5px black;
   font-size: larger;
   cursor: pointer;
 }
 
-nav ul > li a{
+/*nav ul > li a{
   color: rgb(47, 48, 51);
   font-size: larger;
   cursor: pointer;
@@ -42,8 +43,26 @@ nav ul > li a:active{
 
 nav ul > li:last-of-type{
   padding-right: 0;
+}*/
+
+a.nav-link:hover{
+  color: rgb(180, 40, 173);
+  font-size: larger;
+
 }
 
+a.nav-link:active{
+  color:rgb(180, 40, 173);
+  font-size: larger;
+}
+
+a.nav-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: larger;
+
+}
 
   
 
