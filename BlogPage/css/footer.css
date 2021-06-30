@@ -60,4 +60,20 @@
   font-size: larger;
 }
 
+a.social-link:hover{
+  color: rgb(180, 40, 173);
+  font-size: larger;
 
+}
+
+a.social-link:active{
+  color: rgb(180, 40, 173);
+  font-size: larger;
+}
+
+a.social-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+}
