@@ -20,7 +20,7 @@ body {
   .container{
     display:grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30vh 30vh 1fr 90px;
+    grid-template-rows: 30vh 40vh 1fr 90px;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
@@ -35,7 +35,7 @@ body {
 .container{
     display:grid;
     grid-template-columns:100vw;
-    grid-template-rows: 30vh 30vh 1fr 90px;
+    grid-template-rows: 30vh 40vh 1fr 90px;
     grid-template-areas: 
     "hd_post hd_post hd_post hd_post hd_post hd_post hd_post hd_post"
     "author author author author author author author author"
