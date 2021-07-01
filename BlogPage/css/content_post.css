@@ -1,0 +1,97 @@
+@import './style_post.css';
+
+.main_post{
+    grid-area: main_post;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.main_post p.post_text{
+    font-size: larger;
+}
+
+.main_post blockquote.post_quote{
+    font-size: larger;
+    border-left: 3px solid black;
+    padding: 10px;
+    margin: 30px;
+    font-style: italic;
+}
+
+.share-link-text {
+    height: 40%;
+    margin: 5px;
+}   
+
+.share-link p.post_sharelink{
+    text-shadow: 0 0 5px black;
+
+}
+
+.share-link{
+    grid-area: social_share;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-link-icon {
+    margin: 5px;
+}
+
+a.share-link-icon-click:hover{
+    font-size: larger;
+  
+  }
+  
+  a.share-link-icon-click:active{
+    font-size: larger;
+  }
+  
+  a.share-link-icon-click {
+    cursor: pointer;
+  
+  }
+
+  .button-area{
+    grid-area: buttons;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 30px;
+  }
+
+  a.myButton {
+	box-shadow: 0 0 5px black;
+	background:linear-gradient(to bottom, #c744bc 5%, #2a9cbf 100%);
+	background-color:#c744bc;
+	border-radius:28px;
+	border:1px solid black;
+	cursor:pointer;
+    padding: 15px 15px 15px 15px;
+    color: black;
+    text-decoration: none;
+	text-shadow:0 0 5px black;
+    font-size: larger;
+}
+a.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+    text-decoration: none;
+    color: black;
+    text-shadow:0 0 5px black;
+}
+
+a.myButton:active {
+	position:relative;
+	top:1px;
+    text-decoration: none;
+    color: black;
+    text-shadow:0 0 5px black;
+
+}
