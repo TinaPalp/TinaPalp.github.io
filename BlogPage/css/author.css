@@ -3,12 +3,12 @@
 
 
 
-.author_layout{
+.author{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    grid-area: author;
    
 }
 
@@ -16,6 +16,8 @@
     order: 1;
     height: 130px;
     width: 130px;
+    padding: 20px;
+    margin: 20px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -24,11 +26,17 @@
 
 .author_info {
     order: 2;
-    padding-left: 20px;
+    width: 60%;
+    padding: 20px;
+    margin: 20px;
 
 }
 
 .author_info h1.heading_author{
     font-size:2em;
     text-shadow: 0 0 5px black;
+}
+
+.author_info p.tagline_author{
+    font-size:larger;
 }
