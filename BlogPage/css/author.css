@@ -1,0 +1,34 @@
+@import './style_post.css';
+
+
+
+
+.author_layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+   
+}
+
+.author_box{
+    order: 1;
+    height: 130px;
+    width: 130px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url('../images/author.jpeg');
+}
+
+.author_info {
+    order: 2;
+    padding-left: 20px;
+
+}
+
+.author_info h1.heading_author{
+    font-size:2em;
+    text-shadow: 0 0 5px black;
+}
