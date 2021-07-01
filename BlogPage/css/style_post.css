@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import './nav.css';
 @import './author.css';
+@import './content_post.css';
+@import './footer.css';
+
 
 
 *{
@@ -20,13 +23,15 @@ body {
   .container{
     display:grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 30vh 40vh 1fr 90px;
+    grid-template-rows: 30vh 40vh 1fr 50px 90px;
     /* grid-template-columns: repeat(3, 1fr); */
     /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd_post"
     "author"
-    "main"
+    "main_post"
+    "social_share"
+    "buttons"
     "ft";
     /*border: 2px solid yellow;*/
   }
@@ -39,7 +44,9 @@ body {
     grid-template-areas: 
     "hd_post hd_post hd_post hd_post hd_post hd_post hd_post hd_post"
     "author author author author author author author author"
-    "main main main main main main main main"
+    "main_post main_post main_post main_post main_post main_post main_post main_post"
+    "social_share" "social_share" "social_share" "social_share" "social_share" "social_share"
+    "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" 
     "ft ft ft ft ft ft ft ft";
     /*border: 2px solid rgb(226, 219, 219);*/
       }
