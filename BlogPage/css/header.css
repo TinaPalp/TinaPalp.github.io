@@ -1,4 +1,6 @@
 @import './style.css';
+@import './style_post.css';
+
 
 .mainheading{
     display: flex;
@@ -32,4 +34,35 @@
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.header_post{
+    /* row start/column start/ row end/ column end */
+  grid-area:hd_post;
+  background-image: url('../images/blog_2.jpeg');
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainheading_post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    min-height: 30vh;
+    color: white;
+    text-align: center;
+}
+
+.mainheading_post h2.name-heading{
+    font-size:4em;
+    text-shadow: 0 0 5px black;
+    
+}
+
+.mainheading_post p.tagline{
+    font-style: italic;
+    font-size:30px;
+    text-shadow: 0 0 5px black;
 }
