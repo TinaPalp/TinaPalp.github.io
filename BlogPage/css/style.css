@@ -23,15 +23,13 @@ body {
     display:grid;
     grid-template-columns: 100vw;
     grid-template-rows: 50vh 1fr 90px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd"
     "main"
     "ft";
-    /*border: 2px solid yellow;*/
   }
 
+  /*Media - Small screens */  
 @media(max-width:330px){
 
   .blog-cards-section{
@@ -61,6 +59,7 @@ body {
 
 }
 
+/*Media - Medium screens */  
 @media(max-width:413px){
   
   .blog-cards-section{
@@ -80,6 +79,7 @@ body {
   }
 }
 
+/*Media - Medium screens */  
 @media(max-width:460px){
   
   .blog-cards-section{
