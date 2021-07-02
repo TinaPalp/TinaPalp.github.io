@@ -32,15 +32,13 @@ body {
     /*border: 2px solid yellow;*/
   }
 
-@media(min-width:900px){
-.container{
-    display:grid;
-    grid-template-columns:100vw;
-    grid-template-rows: 50vh 1fr 90px;
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
-    /*border: 2px solid rgb(226, 219, 219);*/
-      }
+@media(max-width:350px){
+  .blog-cards-section{
+    display: block;
+}
+
+.blog-card{
+    width:100%;
+    margin-bottom: 40px;
+}
 }
