@@ -24,8 +24,6 @@ body {
     display:grid;
     grid-template-columns: 100vw;
     grid-template-rows: 30vh 40vh 1fr 50px 90px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd_post"
     "author"
@@ -33,34 +31,16 @@ body {
     "social_share"
     "buttons"
     "ft";
-    /*border: 2px solid yellow;*/
   }
 
-/*@media(min-width:900px){
-.container{
-    display:grid;
-    grid-template-columns:100vw;
-    grid-template-rows: 30vh 40vh 1fr 90px;
-    grid-template-areas: 
-    "hd_post hd_post hd_post hd_post hd_post hd_post hd_post hd_post"
-    "author author author author author author author author"
-    "main_post main_post main_post main_post main_post main_post main_post main_post"
-    "social_share" "social_share" "social_share" "social_share" "social_share" "social_share"
-    "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" 
-    "ft ft ft ft ft ft ft ft";
-    /*border: 2px solid rgb(226, 219, 219);
-      }
-} */
 
-
+/*Media - Small screens */  
 @media(max-width:330px){
 
   .container{
     display:grid;
     grid-template-columns: 100vw;
     grid-template-rows: 30vh auto auto 50px 90px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd_post"
     "author"
@@ -68,7 +48,6 @@ body {
     "social_share"
     "buttons"
     "ft";
-    /*border: 2px solid yellow;*/
   }
 
   .author_box{
@@ -103,14 +82,13 @@ body {
 
 }
 
+/*Media - Medium screens */  
 @media(max-width:550px){
 
   .container{
     display:grid;
     grid-template-columns: 100vw;
     grid-template-rows: 30vh auto auto 50px 90px;
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* Initially each element has its own row for small screens */
     grid-template-areas: 
     "hd_post"
     "author"
@@ -118,7 +96,6 @@ body {
     "social_share"
     "buttons"
     "ft";
-    /*border: 2px solid yellow;*/
   }
 
   .author_box{
