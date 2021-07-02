@@ -36,7 +36,7 @@ body {
     /*border: 2px solid yellow;*/
   }
 
-@media(min-width:900px){
+/*@media(min-width:900px){
 .container{
     display:grid;
     grid-template-columns:100vw;
@@ -48,6 +48,110 @@ body {
     "social_share" "social_share" "social_share" "social_share" "social_share" "social_share"
     "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" "buttons" 
     "ft ft ft ft ft ft ft ft";
-    /*border: 2px solid rgb(226, 219, 219);*/
+    /*border: 2px solid rgb(226, 219, 219);
       }
+} */
+
+
+@media(max-width:330px){
+
+  .container{
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh auto auto 50px 90px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* Initially each element has its own row for small screens */
+    grid-template-areas: 
+    "hd_post"
+    "author"
+    "main_post"
+    "social_share"
+    "buttons"
+    "ft";
+    /*border: 2px solid yellow;*/
+  }
+
+  .author_box{
+    order: 1;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px !important;
+  }
+  
+  .author{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: author;
+   
 }
+
+.author_info {
+  order: 2;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.mainheading_post h2.name-heading{
+  font-size: 3em;
+}
+
+}
+
+@media(max-width:550px){
+
+  .container{
+    display:grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 30vh auto auto 50px 90px;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* Initially each element has its own row for small screens */
+    grid-template-areas: 
+    "hd_post"
+    "author"
+    "main_post"
+    "social_share"
+    "buttons"
+    "ft";
+    /*border: 2px solid yellow;*/
+  }
+
+  .author_box{
+    order: 1;
+    width: 150px;
+    height: 150px;    
+    margin: auto;
+    margin-top: 50px !important;
+  }
+  
+  .author{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: author;
+   
+}
+
+.author_info {
+  order: 2;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+.mainheading_post h2.name-heading{
+  font-size: 3em;
+}
+
+}
+
+
+
