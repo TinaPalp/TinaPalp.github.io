@@ -32,13 +32,69 @@ body {
     /*border: 2px solid yellow;*/
   }
 
-@media(max-width:350px){
+@media(max-width:330px){
+
   .blog-cards-section{
     display: block;
 }
 
-.blog-card{
-    width:100%;
-    margin-bottom: 40px;
+.blog-card {
+    width: 100%;
+    margin-bottom: 60px;
 }
+
+
+.blog-card .blog-image{
+  width: 100%;
+  height: 35%;
+  margin-bottom: 40px;
+
+}
+
+.blog-content h1.name-heading{
+  font-size: 1.5em;
+}
+
+.mainheading p.tagline{
+  font-size: 25px;
+}
+
+}
+
+@media(max-width:413px){
+  
+  .blog-cards-section{
+      display: block;
+      padding-right: 40px;
+      padding-left: 20px;
+  }
+
+  .blog-card{
+      width:100%;
+      margin-bottom: 40px;
+  }
+
+  .blog-card .blog-image{
+      width:100%;
+      height: 40%;
+  }
+}
+
+@media(max-width:460px){
+  
+  .blog-cards-section{
+      display: block;
+      padding-right: 40px;
+      padding-left: 20px;
+  }
+
+  .blog-card{
+      width:100%;
+      margin-bottom: 40px;
+  }
+
+  .blog-card .blog-image{
+      width:100%;
+      height: 46%;
+  }
 }
