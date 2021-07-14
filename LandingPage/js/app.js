@@ -44,10 +44,12 @@ for(var i=0; i<section.length; i++) {
 
 }
 
+
+// functions for determing which section is in view
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        //rect.top >= 0 &&
+        rect.top >=  -140 &&
         rect.left >= 0 &&
         rect.bottom <= window.innerHeight &&
         rect.right <= window.innerWidth 
@@ -64,17 +66,26 @@ function whichSection() {
     return(sectionViewport);
 }
 
-function viewportSection() {
-   highlightSectionAndNav()
+
+//deleting active class if not in virwport
+const activeNav = document.getElementsByClassName('activeNavItem');
+const activeNavList = document.getElementsByTagName('li');
+
+function removeActiveClass() {
+    sectionViewport= whichSection();
+    if (sectionViewport!= 0) {
+        section[0].classList.remove('your-active-class');
+        activeNavList[0].classList.remove('activeNavItem');
+
+    }  
 }
 
+//highlighting corresponding NavItem and section
 function highlightSectionAndNav(){
+   
+
     sectionInView = whichSection();
     const activeSection = document.getElementsByClassName('your-active-class');
-    const activeNav = document.getElementsByClassName('activeNavItem');
-    const activeNavList = document.getElementsByTagName('li');
-
-
 
     if (sectionInView !=10) {
         section[sectionInView].classList.add('your-active-class');
@@ -87,30 +98,17 @@ function highlightSectionAndNav(){
             }
         } 
     }
-    else{
-        section[0].classList.remove('your-active-class');
-        activeNavList[0].classList.remove('activeNavItem');
-
-    }
-
 
 }
 
-// Add class 'active' to section when near top of viewport
 
+function viewportSection() {
+    highlightSectionAndNav();
+ 
+}
+
+
+
+removeActiveClass();
 document.addEventListener('scroll', viewportSection);
 
-// Scroll to anchor ID using scrollTO event
-
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
