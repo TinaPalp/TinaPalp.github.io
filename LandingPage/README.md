@@ -1,0 +1,14 @@
+Project: LandingPage
+==============
+Project of the Udacity ND: Frond-End Web Developer
+
+Requirements:
+--------------
+- Working with Javascript to manipulate the DOM
+- Dynamic Navigation Bar (is building in dependence of the number of sections)
+- Highlighting section which is in view
+
+
+
+
+
