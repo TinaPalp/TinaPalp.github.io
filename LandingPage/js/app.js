@@ -26,7 +26,7 @@ const headlines = document.getElementsByTagName("h2");
 
 
 // creating nav-bar 
-for(var i=0; i<section.length; i++) {
+for(let i=0; i<section.length; i++) {
     let liNav = document.createElement('li');
 
     if(i==0){
@@ -34,12 +34,14 @@ for(var i=0; i<section.length; i++) {
     }
 
     let aNav = document.createElement('a');
-    aNav.setAttribute('href','#'+section[i].id );
+    //aNav.setAttribute('href','#'+section[i].id );
+
     let headlineNav = document.createTextNode(headlines[i].innerText);
     aNav.classList.add('menu__link');
     aNav.appendChild(headlineNav);
     navBarList.appendChild(liNav);
     liNav.appendChild(aNav);
+    liNav.addEventListener("click", ()=>{section[i].scrollIntoView({behavior: "smooth"})});
 
 
 }
@@ -49,7 +51,7 @@ for(var i=0; i<section.length; i++) {
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
-        rect.top >=  -140 &&
+        rect.top >=  -250 &&
         rect.left >= 0 &&
         rect.bottom <= window.innerHeight &&
         rect.right <= window.innerWidth 
@@ -58,7 +60,7 @@ function isInViewport(element) {
 
 function whichSection() {
     let sectionViewport = 10;
-    for(var i=0; i<section.length; i++) {
+    for(let i=0; i<section.length; i++) {
         if(isInViewport(section[i])) {
             sectionViewport = i;
         } 
@@ -90,7 +92,7 @@ function highlightSectionAndNav(){
     if (sectionInView !=10) {
         section[sectionInView].classList.add('your-active-class');
         activeNavList[sectionInView].classList.add('activeNavItem');
-        for(var i=0; i<activeSection.length; i++) {
+        for(let i=0; i<activeSection.length; i++) {
             if (activeSection[i].id != section[sectionInView].id) {
                 activeSection[i].classList.remove('your-active-class');
                 activeNav[i].classList.remove('activeNavItem');
@@ -106,7 +108,6 @@ function viewportSection() {
     highlightSectionAndNav();
  
 }
-
 
 
 removeActiveClass();
