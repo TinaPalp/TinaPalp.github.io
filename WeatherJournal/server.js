@@ -1,5 +1,5 @@
 /* Empty JS object to act as endpoint for all routes */
-projectData = [];
+projectData = {};
 
 /* Express to run server and routes */
 const express = require('express');
@@ -40,9 +40,8 @@ app.post('/projectData', addData);
 
 function addData (req,res){
 
-  newEntry = req.body
+  projectData = req.body
   //console.log(newEntry, 'newEntry');
-  projectData.push(newEntry);
   //console.log(projectData, 'projectData');
   res.send(projectData);
  
