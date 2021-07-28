@@ -68,10 +68,10 @@ const updateUI = async () => {
     const allData = await request.json()
       //console.log(allData);
       //console.log('updateUI');
-      document.getElementById('date').innerHTML = 'Date: '+ allData[0].date;
-      document.getElementById('city').innerHTML = 'City: '+ allData[0].cityName;
-      document.getElementById('temp').innerHTML = 'Temperature: ' + allData[0].degree + '°';
-      document.getElementById('content').innerHTML = 'Feelings: ' + allData[0].feeling;
+      document.getElementById('date').innerHTML = 'Date: '+ allData.date;
+      document.getElementById('city').innerHTML = 'City: '+ allData.cityName;
+      document.getElementById('temp').innerHTML = 'Temperature: ' + allData.degree + '°';
+      document.getElementById('content').innerHTML = 'Feelings: ' + allData.feeling;
   
   } 
   catch(error) {
