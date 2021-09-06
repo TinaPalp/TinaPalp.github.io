@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel Planner</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <!-- <link rel="stylesheet" href="../styles/style.css"> -->
+
+
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+
+  <main>
+        
+    <div class= "container">
+      <div class="main-heading">
+          <h1>Travel Planner</h1>
+          <form action="" class="form" id="form">
+            <label for="city"></label>
+              <input
+              type="text"
+              class="city"
+              id="city"
+              placeholder="Enter Your Destination"
+              />
+            <label for="date"></label>
+              <input
+              type="text"
+              id="date"
+              placeholder="Enter Start: MM/DD/YYY"
+              onfocus="(this.type='date')"
+              />
+              <label for="date"></label>
+              <input
+              type="text"
+              id="enddate"
+              placeholder="Enter End: MM/DD/YYY"
+              onfocus="(this.type='date')"
+              />
+            <button type="submit" class="submit" id="submit">Let's Go!</button>
+          </form>
+      </div>
+    </div>
+
+    <div class="resultContainer">
+    <section id="resultsData">
+        <div class="result" id="results">
+            <h1 id ="destinationResult"></h1>
+            <h1 id="weather"></h1>
+            <div class="flex">
+              <img id="myImg" src="" alt="">
+            </div>
+          </div>
+      </section>
+    </div>
+            
+
+            
+            
+        
+
+
+
+ 
+    </main>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+          // Use the window load event to keep the page load performant
+          window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/service-worker.js');
+          });
+      }
+     </script>
+
+
+    <script type="text/javascript" src="main.js"></script></body>
+</html>
